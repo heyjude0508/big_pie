@@ -20,7 +20,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
         // add a left force
-        if (Input.GetKey("d"))
+        if (Input.GetKey("a"))
         {
 
             rb.AddForce(-sidewaysForce * Time.deltaTime, 0, 0);
