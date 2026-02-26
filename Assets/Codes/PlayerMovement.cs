@@ -15,7 +15,7 @@ public class PlayerMovement : MonoBehaviour
         // add a right force
         if (Input.GetKey("d")) {
 
-            rb.AddForce(sidewaysForce * Time.deltaTime, 0, 0);
+            rb.AddForce(sidewaysForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
 
         }
 
@@ -23,7 +23,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKey("a"))
         {
 
-            rb.AddForce(-sidewaysForce * Time.deltaTime, 0, 0);
+            rb.AddForce(-sidewaysForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
 
         }
     }
